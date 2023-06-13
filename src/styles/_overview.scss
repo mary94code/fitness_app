@@ -1,0 +1,57 @@
+@import "./variables";
+
+.main_wrapper {
+  @include display-flex;
+  background-color: $main_colour;
+  min-height: 100vh;
+}
+
+.greeting_component {
+  @include display-flex;
+}
+
+.middle_component {
+  padding: 20px;
+  @include display-flex;
+  justify-content: space-around;
+  width: 90%;
+  color: $main_text_colour;
+}
+
+.details_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right_sidebar {
+  background-color: $gray_colour;
+  border-radius: 20px;
+  max-width: 400px;
+  padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  .main_wrapper {
+    width: 90%;
+    margin: 50px;
+  }
+
+  .middle_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_sidebar {
+    margin-top: 50px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width:720px) {
+  
+  .details_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

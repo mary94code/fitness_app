@@ -1,0 +1,24 @@
+.water_container{
+    width: 100%;
+    background-color: $lightcream_colour;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    color: $main_colour;
+    text-align: center;
+
+    p{
+        font-size: 20px;
+
+    }
+    button{
+        padding: 5px 30px;
+        margin: 10px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: $main_colour;
+        color: $main_text_colour;
+        cursor: pointer;
+    }
+}

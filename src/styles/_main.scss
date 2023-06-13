@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "./variables";
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: $main_colour;
+}
+.App{
+    max-width: 1500px;
+}

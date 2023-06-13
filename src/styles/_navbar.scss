@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.left_sidebar {
+    // background-color: $gray_colour;
+
+}
+
+nav {
+    @include flex-column;
+    min-width: 200px;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+}
+
+nav a {
+    color: $grey_text_colour;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: $lightpink_colour;
+}
+
+.nav_icon {
+    margin: 3px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 550px){
+    nav a{
+        font-size: 15px;
+        padding: 5px;
+    }
+}

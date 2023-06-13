@@ -1,0 +1,31 @@
+.distance_container {
+    background-color: $lightpink_colour;
+    width: 300px;
+    max-width: 350px;
+    @include display-flex;
+    @include flex-column;
+    color: $main_colour;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 20px;
+
+
+    p {
+        margin: 5px;
+    }
+
+    .distance_icon {
+        font-size: 30px;
+    }
+
+    .distance {
+        color: $grey_text_colour;
+    }
+
+    .length {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

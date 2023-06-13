@@ -1,0 +1,39 @@
+.todays_date {
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.today {
+    background-color: $grey_text_colour;
+    padding: 0 5px 10px 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    
+    .activities {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width: 800px){
+    .activities{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 550px){
+    .activities{
+        grid-template-columns: 1fr;
+    }
+}

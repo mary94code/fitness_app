@@ -1,0 +1,27 @@
+.content_wrapper {
+  width: 300px;
+  height: 350px;
+  background: #363636;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 80px;
+  margin-bottom: 20px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
