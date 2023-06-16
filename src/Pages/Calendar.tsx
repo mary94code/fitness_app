@@ -35,7 +35,7 @@ const Calendar = () => {
       <div className="right_container">
         <div className="stress_container white_text">
           <h3 className="main_heading">
-            {localStorage.getItem("name")} Workout Statistics
+            {localStorage.getItem("name")}'s Workout Statistics
           </h3>
           <p style={{ fontSize: "20px" }} className="banner-paragraph">
             Keep a record of your workouts, noting your achievements and

@@ -39,8 +39,9 @@ nav a.active {
         text-align: center;
     }
 }
-@media (max-width: 550px){
-    nav a{
+
+@media (max-width: 550px) {
+    nav a {
         font-size: 15px;
         padding: 5px;
     }

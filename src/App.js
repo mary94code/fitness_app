@@ -13,6 +13,7 @@ function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
   return (
     <div className="App">
+       {token ? (
         <Router>
           <Routes>
             <Route path="/" element={<Overview />} />
@@ -24,7 +25,13 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
-     =
+       ) : (
+        <Router>
+          <Routes>
+            <Route path="*" element={<Login setToken={setToken} />} />
+          </Routes>
+        </Router>
+      )}
     </div>
   );
 }

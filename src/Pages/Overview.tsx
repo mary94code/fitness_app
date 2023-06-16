@@ -6,18 +6,13 @@ import Water from "../components/Overview/Water";
 import ActivityTracking from "../components/Overview/ActivityTracking";
 import LeftSidebar from "../components/Overview/LeftSidebar";
 import Greetings from "../components/Overview/Greetings";
-import { useEffect, useState } from "react";
-import Popup from "./Popup";
+
+
 
 export default function Overview() {
-  const name = localStorage.getItem("name");
-  const email = localStorage.getItem("email");
+  
 
-  // Render the pop-up only if name or email is not present in local storage
-  if (!name || !email) {
-    return <Popup />;
-  }
-
+  
   return (
     <div className="main_wrapper">
       <LeftSidebar />
