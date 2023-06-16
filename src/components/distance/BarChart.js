@@ -1,8 +1,7 @@
 import data from "../../json/distanceData";
 import { Bar } from "react-chartjs-2";
 import { useState } from "react";
-import { Chart as ChartJS } from "chart.js/auto";
-import { Chart } from "react-chartjs-2";
+
 const BarChart = () => {
   const [chartData, setChartData] = useState({
     labels: data.map((d) => d.day),
